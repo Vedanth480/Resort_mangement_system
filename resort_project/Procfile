@@ -1,0 +1,1 @@
+web: gunicorn resort_project.wsgi

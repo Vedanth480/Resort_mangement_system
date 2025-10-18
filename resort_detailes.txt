@@ -1,0 +1,68 @@
+Developed a full-stack Resort Management System using Django & MySQL. Features include user registration, booking management, admin dashboard with role-based access, email notifications, and LAN deployment. Demonstrates backend architecture, database integration, and full CRUD operations — transferable to Java Spring Boot projects.
+------------------------------
+Step-by-Step Fix
+1️⃣ Activate Your Virtual Environment
+
+Go to your project folder in terminal:
+
+cd "C:\Users\Dell\OneDrive\Desktop\Resort_project"
+
+
+Then activate your virtual environment.
+If you haven’t created one yet, do it now:
+
+python -m venv venv
+
+
+Activate it:
+
+venv\Scripts\activate
+
+
+✅ When it activates, you should see:
+
+(venv) C:\Users\Dell\OneDrive\Desktop\Resort_project>
+
+2️⃣ Install Django
+
+Now that you’re inside the virtual environment, install Django:
+
+pip install django
+
+
+If your project uses MySQL, also install:
+
+pip install mysqlclient
+
+
+If you have a requirements.txt file in your project, install everything at once:
+
+pip install -r requirements.txt
+
+3️⃣ Verify Installation
+
+Run this command to confirm Django is installed:
+
+python -m django --version
+
+
+It should show a version like:
+
+5.1.2
+
+
+(if you see an error — Django is still not installed properly).
+
+4️⃣ Run the Server Again
+
+Now try running:
+
+python manage.py runserver
+-----------------------------------------------------------------------
+http://127.0.0.1:8000/admin/
+http://127.0.0.1:8000/
+http://192.168.x.x:8000/admin/
+python manage.py createsuperuser // for passsowrd and username input
+--------------------------------------------
+python manage.py runserver 0.0.0.0:8000
+
