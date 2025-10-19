@@ -12,8 +12,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY SETTINGS
 # -------------------------------
 SECRET_KEY = os.environ.get('SECRET_KEY', 'replace-this-with-your-secret-key')
-DEBUG = os.environ.get('DEBUG', 'True') == 'True'
-ALLOWED_HOSTS = ['*']  # Replace with Render URL in production
+# DEBUG = os.environ.get('DEBUG', 'True') == 'True'
+DEBUG = False
+# ALLOWED_HOSTS = ['*','resort-mangement-system-1.onrender.com']  
+# Replace with Render URL in production
+ALLOWED_HOSTS = [
+    'resort-mangement-system-1.onrender.com',
+    'localhost',
+    '127.0.0.1'
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://resort-mangement-system-1.onrender.com'
+]
 
 # -------------------------------
 # INSTALLED APPS
