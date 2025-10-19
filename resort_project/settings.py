@@ -11,7 +11,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # -------------------------------
 # SECURITY SETTINGS
 # -------------------------------
-SECRET_KEY = os.environ.get('SECRET_KEY', 'replace-this-with-your-secret-key')
+SECRET_KEY = os.environ.get('SECRET_KEY', 'VedanthN')
 # DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 DEBUG = False
 # ALLOWED_HOSTS = ['*','resort-mangement-system-1.onrender.com']  

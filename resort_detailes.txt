@@ -1,7 +1,7 @@
 Developed a full-stack Resort Management System using Django & MySQL. Features include user registration, booking management, admin dashboard with role-based access, email notifications, and LAN deployment. Demonstrates backend architecture, database integration, and full CRUD operations — transferable to Java Spring Boot projects.
 ------------------------------
 Step-by-Step Fix
-1️⃣ Activate Your Virtual Environment
+1️ Activate Your Virtual Environment
 
 Go to your project folder in terminal:
 
@@ -65,4 +65,5 @@ http://192.168.x.x:8000/admin/
 python manage.py createsuperuser // for passsowrd and username input
 --------------------------------------------
 python manage.py runserver 0.0.0.0:8000
+https://resort-mangement-system-1.onrender.com
 
