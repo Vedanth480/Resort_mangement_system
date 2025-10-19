@@ -26,8 +26,8 @@ def home(request):
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #path('', home, name='home'),  # LAN test home page
-    path('', views.home, name='home'),
+    path('', home, name='home'),  # LAN test home page
+    #path('', views.home, name='home'),
     path('send-email/', test_email, name='send_email'),  # Email trigger route
 ]
 
