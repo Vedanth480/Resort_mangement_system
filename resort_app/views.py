@@ -22,5 +22,4 @@ def test_email(request):
     send_notification_email(to_email, subject, message)
     return HttpResponse("Email has been sent successfully.")
 
-def home(request):
-    return render(request, 'index.html')
+
