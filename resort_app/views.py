@@ -1,6 +1,8 @@
 from django.core.mail import send_mail
 from django.http import HttpResponse
 from django.conf import settings
+from django.shortcuts import render
+
 
 def send_notification_email(to_email, subject, message):
     send_mail(
@@ -19,3 +21,6 @@ def test_email(request):
 
     send_notification_email(to_email, subject, message)
     return HttpResponse("Email has been sent successfully.")
+
+def home(request):
+    return render(request, 'index.html')

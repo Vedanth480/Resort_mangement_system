@@ -66,4 +66,7 @@ python manage.py createsuperuser // for passsowrd and username input
 --------------------------------------------
 python manage.py runserver 0.0.0.0:8000
 https://resort-mangement-system-1.onrender.com
+https://resort-mangement-system-1.onrender.com/admin/login/?next=/admin/
+
+https://api.render.com/deploy/srv-d3q57jili9vc73c2o460?key=O9LebFLPj4U
 

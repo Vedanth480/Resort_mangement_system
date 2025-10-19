@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from django.http import HttpResponse
 from resort_app.views import test_email
+from resort_app import views
 
 # Simple home view for LAN testing
 def home(request):
@@ -25,7 +26,9 @@ def home(request):
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home, name='home'),  # LAN test home page
+    #path('', home, name='home'),  # LAN test home page
+    path('', views.home, name='home'),
     path('send-email/', test_email, name='send_email'),  # Email trigger route
 ]
+
 
